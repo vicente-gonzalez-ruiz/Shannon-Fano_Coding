@@ -1,0 +1,54 @@
+\documentclass{article}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\begin{tabular}{ccc}
+
+  \begin{tabular}{lrr}
+    \multicolumn{1}{c}{First iteration:} \\
+      Symbol & Count & Bits\\
+      \hline
+      A       & 15       & 0\\
+      B       & 7        & 0\\
+      \hline
+      C       & 6        & 1\\
+      D       & 6        & 1\\
+      E       & 5        & 1
+  \end{tabular}
+
+  &
+
+  \begin{tabular}{lrr}
+    \multicolumn{1}{c}{Second iteration:} \\
+    Symbol & Count & Bits\\
+    \hline
+    A       & 15       & 00\\
+    \hline
+    B       & 7        & 01\\
+    \hline
+    C       & 6        & 10\\
+    \hline
+    D       & 6        & 11\\
+    E       & 5        & 11
+  \end{tabular}
+
+  &
+  
+  \begin{tabular}{lrr}
+    \multicolumn{1}{c}{Third iteration:} \\
+    Symbol & Count & Bits\\
+    \hline
+    A       & 15       & 00\\
+    \hline
+    B       & 7        & 01\\
+    \hline
+    C       & 6        & 10\\
+    \hline
+    D       & 6        & 110\\
+    \hline
+    E       & 5        & 111
+  \end{tabular}
+
+\end{tabular}
+\end{document}
