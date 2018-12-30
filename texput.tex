@@ -1,0 +1,53 @@
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "<none>"
+%%% End:
+
+\title{Shannon-Fano coding}
+
+\author{Vicente González Ruiz}
+
+\maketitle
+
+\section{History}
+
+\begin{itemize}
+\tightlist
+\item
+  At the end of the 40's, Claude E. Shannon (Bell Labs) and R.M. Fano
+  (MIT) developed the Shannnon-Fano codec~\cite{fano1949transmission,
+    shannon1948mathematical}.
+\end{itemize}
+
+\section{Encoder}
+\begin{enumerate}
+\tightlist
+\item
+  Sort the symbols using their probabilities.
+\item
+  Split the set of symbols into two subsets in a way in which the each
+  subset have the same total probability.
+\item
+  Assign a different bit to each set.
+\item
+  Repeat the previous procedure to each subset until each subset has
+  only one symbol.
+\end{enumerate}
+
+\subsection{Example}
+\begin{itemize}
+\tightlist
+\item
+  Let's use the following probabilistic model:
+\end{itemize}
+
+\img{180}{graphics/shannon-fano_example.png}
+
+Using it, this is the Shannon-Fano coding:
+
+\img{1000}{graphics/shannon-fano_example-coding.png}
+
+\subsection{Decoder}
+TO-DO.
+
+\bibliography{text-compression}
